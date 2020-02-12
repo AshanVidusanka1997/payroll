@@ -81,6 +81,10 @@ function get_title($url) {
         <!-- Font Awesome -->
         <link rel="stylesheet" href="dist/css/font-awesome-4.7.0/css/font-awesome.min.css">  
 
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
         <!-- Theme style -->
         <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
         <!-- AdminLTE Skins. Choose a skin from the css/skins

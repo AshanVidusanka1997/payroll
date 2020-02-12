@@ -46,37 +46,41 @@ function lost_focus(key) {
 
 
 
-function getdt() {
+// function getdt() {
 
-    xmlHttp = GetXmlHttpObject();
-    if (xmlHttp == null) {
-        alert("Browser does not support HTTP Request");
-        return;
-    }
+//     xmlHttp = GetXmlHttpObject();
+//     if (xmlHttp == null) {
+//         alert("Browser does not support HTTP Request");
+//         return;
+//     }
 
-    var url = "comman_data.php";
-    url = url + "?Command=" + "getdt";
-    url = url + "&ls=" + "new";
+//     var url = "master_save.php";
+//     url = url + "?Command=" + "getdt";
+//     url = url + "&ls=" + "new";
 
-    xmlHttp.onreadystatechange = assign_dt;
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send(null);
-}
+//     xmlHttp.onreadystatechange = assign_dt;
+//     xmlHttp.open("GET", url, true);
+//     xmlHttp.send(null);
+// }
 
-function assign_dt() {
-    var XMLAddress1;
+// function assign_dt() {
+//     var XMLAddress1;
 
-    if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete")
-    {
+//     if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete")
 
-      XMLAddress1 = xmlHttp.responseXML.getElementsByTagName("id");
-      document.getElementById('refno').value = XMLAddress1[0].childNodes[0].nodeValue;
+//     {
+//       //alert(XMLAddress1);
 
-      XMLAddress1 = xmlHttp.responseXML.getElementsByTagName("uniq");
-      document.getElementById('uniq').value = XMLAddress1[0].childNodes[0].nodeValue;
+//       XMLAddress1 = xmlHttp.responseXML.getElementsByTagName("id1");
+//       document.getElementById('employeeno_txt').value = XMLAddress1[0].childNodes[0].nodeValue;
 
-    }
-}
+
+
+//       // XMLAddress1 = xmlHttp.responseXML.getElementsByTagName("uniq");
+//       // document.getElementById('uniq').value = XMLAddress1[0].childNodes[0].nodeValue;
+
+//     }
+// }
 
 
 
@@ -111,23 +115,32 @@ function save_inv() {
                   "Message": "Something",
                   "Col": 
                     {
-                      "medical_date" : document.getElementById("medical_date").value,
-                      "ref_no" : document.getElementById("ref_no").value,
-                      "serial_no" : document.getElementById("serial_no").value,
-                      "passport_no" : document.getElementById("passport_no").value,
-                      "time" : document.getElementById("time").value,
-                      "doctor" : document.getElementById("doctor").value,
-                      "pasnger_name" : document.getElementById("pasnger_name").value,
-                      "age" : document.getElementById("age").value,
-                      "sex" : document.getElementById("sex").value,
-                      "lab" : document.getElementById("lab").value,
-                      "entry_by" : document.getElementById("entry_by").value,
-                      "approved_by" : document.getElementById("approved_by").value
+                      "employeeno_txt": document.getElementById("employeeno_txt").value,
+                      "initials_txt": document.getElementById("initials_txt").value,
+                      "namewithini_txt": document.getElementById("namewithini_txt").value,
+                      "address_txt": document.getElementById("address_txt").value,
+                      "joindate_txt": document.getElementById("joindate_txt").value,
+                      "mobileno_txt": document.getElementById("mobileno_txt").value,
+                      "status_txt": document.getElementById("status_txt").value,
+                      "homephone_txt": document.getElementById("homephone_txt").value,
+                      "spouse_txt": document.getElementById("spouse_txt").value,
+                      "contactperson_txt": document.getElementById("contactperson_txt").value,
+                      "nochild_txt": document.getElementById("nochild_txt").value,
+                      "email_txt": document.getElementById("email_txt").value,
+                      "nameofclild_txt": document.getElementById("nameofclild_txt").value,
+                      "designation_txt": document.getElementById("designation_txt").value,
+                      "dob_txt": document.getElementById("dob_txt").value,
+                      "bank_txt": document.getElementById("bank_txt").value,
+                      "refdt_txt": document.getElementById("refdt_txt").value,
+                      "preemployee_txt": document.getElementById("preemployee_txt").value,
+                      "department_txt": document.getElementById("department_txt").value,
+                      "religion_txt": document.getElementById("religion_txt").value,
+                      "qtyofemployees": document.getElementById("qtyofemployees").value,
+                      "remark": document.getElementById("remark").value
                     }
                   
                 };
-
-
+ 
     ///////////////////////////////////////////////////////////////////////////////
     
 
